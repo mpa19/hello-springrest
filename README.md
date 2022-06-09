@@ -1,9 +1,10 @@
-Para ejecutar usar:
+### Ejecutar con gradle:
 
 ./gradlew bootRun
 
 
-Creacion y ejecucion con docker:
+### Creacion y ejecucion con docker:
 
-docker build -t hello-springrest:latest .
+docker build -t springrest:latest .
+
 docker -it --rm -p 8080:8080 springrest:latest
