@@ -8,7 +8,9 @@ pipeline {
                 // git branch: 'main', url: 'https://github.com/mpa19/hello-springrest.git'
 
                 // Run Gradle a Unix agent.
-                sh "./gradlew test assemble"
+                withGradle {
+                    sh './gradlew test assemble'
+                }
             }
 
             post {
